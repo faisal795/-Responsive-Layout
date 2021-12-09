@@ -1,0 +1,214 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    transition: all .3s;
+}
+.fontstyle{
+    font-family: serif;  
+}
+html{
+    font-size: 62.5%;
+   
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+p .fas{
+color: #40e0d0;
+}
+
+
+/* Header Section  */
+#header{
+    background: url(img/bg.jpg) no-repeat 0 0;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+}
+.layer{
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+}
+#number{
+    text-align: end;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+}
+#logo{ color: #40e0d0; }
+#logo img{ width: 5rem; }
+.row{ align-items: center; }
+.banner_titel h1{ letter-spacing: .1rem;}
+.banner_titel b{
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.content_div {
+    background-color: rgba(64, 224, 208, 0.7);
+    border-radius: 1rem;
+    letter-spacing: .1rem;
+    padding: .5rem 1.5rem;
+}
+.content_div h2{ padding-top: 1.3rem; }
+.content_div p{ font-size: 1.3rem; }
+
+.form_div label{
+    display: block;
+    font-size: 1.2rem;
+}
+.form_div input{
+    display: block;
+    width: 100%;
+    border-radius: .7rem;
+    outline: none;
+    border: none;
+}
+.form_div [type="email"] {
+    margin: .5rem 0;
+    width: 100%;
+    padding: .5rem 1.5rem;
+    font-size: 1.4rem;
+    border: .2rem solid #ffc90e;
+    margin-bottom: 1rem;
+}
+.form_div [type="button"] {
+    font-size: 2rem;
+    padding: .4rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ffc90e;
+    margin-bottom: 2rem;
+}
+.form_div [type="button"]:hover{
+    background: rgba(255, 201, 14, .7);
+}
+
+/* customers Section  */
+#section{ text-transform: uppercase; position: relative;}
+#section::after{
+    position: absolute;
+    content: '';
+    width: 15rem;
+    height: .3rem;
+    background: #ffc90e;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, 50%);
+}
+.content{
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: .7rem;
+}
+.quotes {
+    background: #40e0d0;
+    padding: 3rem 1rem;
+    border-radius: .7rem;
+    color: #fff;
+}
+.quotes p{ font-size: 1.7rem; }
+.quotes footer{ font-size: 1.7rem; }
+.content img, .content h3, .content pre{ position: relative; }
+.content img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    top: -3rem;
+}
+.content h3{ font-style: italic; top: -2rem; }
+.content pre{ top: -2rem; font-size: 1.4rem; }
+.hover:hover{
+    cursor: pointer;
+    transform: translateY(-.4rem);
+}
+
+/* properties Section */
+#properties {
+    background: url(img/bg2.jpg) no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+    z-index: 100;
+}
+#properties::before{
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#properties .lead{
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+.btn {
+    position: relative;
+    width: 17rem;
+    height: 4rem;
+    align-items: center;
+    font-size: 1.7rem;
+    outline: none;
+    background: #000022;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: .8rem;
+    letter-spacing: .1rem;
+    font-weight: 500;
+}
+.btn:hover{
+    background: none;
+    border: .1rem solid #000022;
+}
+.btn img, .footer_logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/* footer Section */
+#footer {
+    background: #333;
+    color: #fff;
+}
+.last_footer, .first_footer{
+    display: flex;
+    align-items: center;
+    height: 6rem;
+}
+.first_footer h5, .first_footer p, .last_footer p{  margin-bottom: 0; }
+.first_footer h5{ letter-spacing: .1rem; }
+.first_footer p{padding-left: .7rem;}
+.last_footer p{padding-right: 1rem;}
+.last_footer img{
+    width: 8rem;
+    height: 4rem;
+}
+
+/* media Quries */
+
+@media (max-width:1280px){
+    html{
+        font-size: 56%;
+    }
+}
+@media (max-width:580px){
+    .content_div h2, .content_div p{
+       text-align: center;
+    }
+    .content_div{
+        margin-top: 5rem;
+    }
+}
